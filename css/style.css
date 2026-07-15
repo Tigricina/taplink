@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    color: #222;
+}
+
+.page-wrapper {
+    max-width: 375px;
+    margin: auto;
+    background: #f7f7f7;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0px 30px rgba(128, 127, 127, 0.25);
+
+}
+
+/* ---------------- Header ---------------- */
+
+.header {
+    position: relative;
+    height: 330px;
+}
+
+.header__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    border-radius: 0 0 55px 55px;
+}
+
+.header__content {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+    z-index: 2;
+}
+
+.header__title {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.header__subtitle {
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 400;
+    text-shadow: 1px 1px black;
+    text-color: #ffffff;
+}
+
+/* ---------------- Profile ---------------- */
+
+.profile {
+    position: relative;
+    margin-top: -55px;
+    padding: 0 20px;
+}
+
+.profile__avatar {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 8px solid #deebff;
+    object-fit: cover;
+    position: relative;
+    z-index: 3;
+}
+
+.profile__card {
+    background: #ffffff;
+    margin-top: -45px;
+    padding: 70px 20px 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.profile__name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.profile__profession {
+    font-size: 18px;
+    color: #666;
+}
+
+/* ---------------- Services ---------------- */
+
+.services {
+    margin: 40px 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------------- Social ---------------- */
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.social__link {
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .3s;
+}
+
+.social__link:hover {
+    transform: translateY(-3px);
+}
+
+.social__link img {
+    width: 28px;
+    height: 28px;
+}
+
+.social__link--github {
+    background: #000;
+}
+
+.social__link--telegram {
+    background: #34a9e8;
+}
+
+/* ---------------- Title ---------------- */
+
+.services__title {
+    width: 100%;
+    background: #cfe6fb;
+    text-align: center;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    border-radius: 8px;
+}
+
+/* ---------------- Card ---------------- */
+
+.services__card {
+    background: #9fb8da;
+    height: 360px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.services__text {
+    font-size: 20px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: Georgia, serif;
+}
